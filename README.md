@@ -1,2 +1,2 @@
-# coinbase-investors
-Coinbase Investors helps people using Coinbase to improve their wealth management.
+# boilerplate-mobile-web
+Boilerplate Mobile Web helps people using Coinbase to improve their wealth management.
