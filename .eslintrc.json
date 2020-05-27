@@ -1,0 +1,39 @@
+{
+	"env": {
+		"browser": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"extends": "standard",
+		"sourceType": "module",
+		"ecmaVersion": 2018,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"allowImportExportEverywhere": true
+	},
+	"plugins": [
+		"react"
+	],
+	"globals": {
+		"logger": true,
+		"workbox": true,
+		"importScripts": true
+	},
+	"extends": [
+		"@guivic/eslint-config-guivic"
+	],
+	"rules": {
+		"require-jsdoc": "off",
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
+		"import/prefer-default-export": "off"
+	},
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			}
+		}
+	}
+}
