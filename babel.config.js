@@ -1,1 +1,1 @@
-./config/babel.web.config.js
+./config/babel.mobile.config.js
