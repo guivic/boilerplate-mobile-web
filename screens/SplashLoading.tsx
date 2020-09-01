@@ -1,32 +1,17 @@
-import React, { useContext } from 'react';
-import { NavigationContainerRef } from '@react-navigation/native';
+import React, { useEffect } from 'react';
 import { ImageBackground, Dimensions } from 'react-native';
-
-import { useSetup } from '../hooks';
-import { NavigateService } from '../services';
-import { prepareAssets } from '../custom';
-
-interface SplashLoadingProps {
-	navigation: NavigationContainerRef;
-}
+import { useNavigation } from '@react-navigation/native';
 
 const { height, width } = Dimensions.get('window');
 
-export const SplashLoading = ({
-	navigation,
-}: SplashLoadingProps) => {
-	const { to, setNavigator } = useContext(NavigateService);
+export const SplashLoading = () => {
+	const navigation = useNavigation();
 
 	const initData = async () => {
-		setNavigator(navigation)
-		await prepareAssets();
+		await navigation.navigate('Welcome');
 	};
 
-	const isInitialSetupReady = useSetup(initData);
-
-	useSetup(async () => {
-		await to('Welcome');
-	}, isInitialSetupReady);
+	useEffect(initData, []);
 
 	return (
 		<ImageBackground

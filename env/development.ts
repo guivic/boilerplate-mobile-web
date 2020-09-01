@@ -1,7 +1,3 @@
-interface DevelopmentEnvironment {
-
-}
-
-export const devEnv: DevelopmentEnvironment = {
-
+export default {
+	API_URL: 'XXXXXXXXX',
 };

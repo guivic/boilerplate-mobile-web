@@ -1,4 +1,2 @@
-export { FlexBox } from './FlexBox';
-export { Fonts } from './Fonts';
+export { Fonts } from './fonts/fonts';
 export { Palette } from './Palette';
-export { Assets, prepareAssets } from './Assets';
