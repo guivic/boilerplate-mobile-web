@@ -1,1 +1,0 @@
-export { Ressource } from './Assets';
