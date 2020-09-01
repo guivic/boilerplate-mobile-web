@@ -1,8 +1,8 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "prepare:web": "ln -sf ./config/tsconfig.web.json ./tsconfig.json && ln -sf ./config/babel.web.config.js ./babel.config.js",
-    "prepare:mobile": "ln -sf ./config/tsconfig.mobile.json ./tsconfig.json && ln -sf ./config/babel.mobile.config.js ./babel.config.js",
+    "prepare:web": "ln -sf ./config/tsconfig.web.json ./tsconfig.json && ln -sf ./config/.web.babelrc ./.babelrc",
+    "prepare:mobile": "ln -sf ./config/tsconfig.mobile.json ./tsconfig.json && ln -sf ./config/.mobile.babelrc ./.babelrc",
     "dev:mobile": "yarn prepare:mobile && expo start",
     "dev:android": "yarn prepare:mobile && expo start --android",
     "dev:ios": "yarn prepare:mobile && expo start --ios",
@@ -30,9 +30,6 @@
     "expo-asset": "~8.1.7",
     "expo-constants": "~9.1.1",
     "expo-font": "~8.2.1",
-    "jss": "^10.1.1",
-    "jss-plugin-camel-case": "^10.1.1",
-    "jss-plugin-global": "^10.1.1",
     "next": "^9.4.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",

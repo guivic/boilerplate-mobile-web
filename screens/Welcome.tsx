@@ -1,22 +1,22 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-import { FlexBox, Palette } from '../custom';
+import { Palette } from '../custom';
 
 const WelcomeStyles = StyleSheet.create({
 	container: {
-		...FlexBox.flex(1),
-		...FlexBox.row,
-		...FlexBox.alignItemsCenter,
-		...FlexBox.justifyContentCenter,
+		flex: 1,
+		flexDirection: 'row',
+		justifyContent: 'center',
+		alignItems: 'center',
 		backgroundColor: Palette.background,
 		paddingHorizontal: 30,
 	},
 	box: {
-		...FlexBox.flex(0.5),
-		...FlexBox.column,
-		...FlexBox.alignItemsCenter,
-		...FlexBox.justifyContentCenter,
+		flex: 1,
+		flexDirection: 'row',
+		justifyContent: 'center',
+		alignItems: 'center',
 		backgroundColor: Palette.onBackground,
 	},
 });

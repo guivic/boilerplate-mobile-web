@@ -11,7 +11,9 @@ export const SplashLoading = () => {
 		await navigation.navigate('Welcome');
 	};
 
-	useEffect(initData, []);
+	useEffect(() => {
+		initData();
+	}, []);
 
 	return (
 		<ImageBackground
