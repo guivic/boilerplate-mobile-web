@@ -1,10 +1,6 @@
-import { globalStyles } from '../custom/styles';
-
 export const Home = () => {
-  const styles = globalStyles();
-
   return (
-    <div className={styles.container}>
+    <div>
       Hello world
 		</div>
 	);

@@ -1,9 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import {
-	SplashLoading,
-	Welcome,
-} from '../screens';
+import { SplashLoading } from '../screens/SplashLoading';
+import { Welcome } from '../screens/Welcome';
 
 const Stack = createStackNavigator();
 

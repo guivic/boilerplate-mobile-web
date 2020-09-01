@@ -1,20 +1,15 @@
 import App from 'next/app';
-import { JssProvider } from 'react-jss';
-import { Sheets, SheetsId } from '../custom/styles';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: any) {
 	return (
-		<JssProvider registry={Sheets} generateId={SheetsId}>
-			<Component {...pageProps} />
-		</JssProvider>
+		<Component {...pageProps} />
 	);
 }
 
-MyApp.getInitialProps = async (appContext) => {
+MyApp.getInitialProps = async (appContext: any) => {
 	const appProps = await App.getInitialProps(appContext);
 
 	return { ...appProps };
-}
-
+};
 
 export default MyApp;

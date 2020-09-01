@@ -1,5 +1,5 @@
 import useSWR from 'swr';
-import { storageFetcher } from '../utils';
+import { storageFetcher } from '../utils/fetchers';
 
 export const useStorage = (key: string) => {
 	const {
